@@ -40,15 +40,7 @@ void insertWord(struct TrieTree **root, char word[])
     int counter = calculateStringLength(word);
 
     struct TrieTree* curr = *root;
-
-    for (int i = 0; i < 32; i++) {
-
-        if(word[i] != NULL)
-        {
-            counter++;
-        }
-    }
-
+    
     for (int j = 0; j < counter; j++) {
 
         int tableNumber = (int *)(word[j] - 'A');
@@ -81,7 +73,6 @@ int calculateStringLength(char word[]){
 
     return counter;
 }
-
 //Funkcja ktora zmienia litery na duze
 char toUpperCase(char word[]) {
     int i;
