@@ -4,8 +4,9 @@
 #include <stdbool.h>
 
 
-//Drzewo oparte jest na 26 literowym alfabecie
+//Drzewo oparte jest na 26 literowym alfabecie (niestety nie obsluguje polskich znakow)
 #define CHAR_SIZE 26
+//
 #define WORD_SIZE 32
 
 struct TrieTree {
@@ -13,6 +14,8 @@ struct TrieTree {
     int isLeaf;// 1 jezeli wezel jest lisciem
     struct TrieTree *children[CHAR_SIZE];
 };
+
+int calculateStringLength(char word[]);
 
 struct TrieTree *getNewTrieNode()
 {
@@ -36,7 +39,7 @@ void insertWord(struct TrieTree **root, char word[])
     if (root == NULL){
         return 0;
     }
-
+    //Oblicznie dlugosci wpisywanego slowa
     int counter = calculateStringLength(word);
 
     struct TrieTree *current = *root;
@@ -147,8 +150,9 @@ int main() {
                 break;
             case 3:
                 printf("Wpisz slowo ktore ma byc usuniete z drzewa: ");
+                fillWordArrayWithNull(word);
                 scanf("%s",word);
-                toUpperCase(word);
+                word[32] = toUpperCase(word);
                 break;
             case 4: break;
             default:
