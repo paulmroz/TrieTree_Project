@@ -40,7 +40,7 @@ void insertWord(struct TrieTree **root, char word[])
     int counter = calculateStringLength(word);
 
     struct TrieTree* curr = *root;
-    
+
     for (int j = 0; j < counter; j++) {
 
         int tableNumber = (int *)(word[j] - 'A');
@@ -85,6 +85,12 @@ char toUpperCase(char word[]) {
     return word;
 };
 
+void fillWordArrayWithNull(char word[])
+{
+    for (int i = 0; i < 32; ++i) {
+        word[i] = NULL;
+    }
+}
 
 int main() {
 
@@ -93,10 +99,7 @@ int main() {
     int choice;
     do{
         char word[WORD_SIZE];
-        for (int i = 0; i < 32; ++i) {
-            word[i] = NULL;
-        }
-        int result;
+
         printf("\n\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyjdz z programu \n\nTwoj wybor:");
         scanf("%d", &choice);
 
@@ -104,15 +107,17 @@ int main() {
         {
             case 1:
                 printf("Wpisz slowo ktore ma być wpisane do drzewa: ");
+                fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
                 insertWord(&root, word);
-                puts("Slowo dodane pomyslnie");
+                puts("\nSlowo dodane pomyslnie");
                 break;
             case 2:
                 printf("Wpisz slowo ktore ma byc sprwadzone czy istnieje w drzewie: ");
+                fillWordArrayWithNull(word);
                 scanf("%s",word);
-                toUpperCase(word);
+                word[32] = toUpperCase(word);
                 break;
             case 3:
                 printf("Wpisz slowo ktore ma byc usuniete z drzewa: ");
