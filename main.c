@@ -39,24 +39,49 @@ void insertWord(struct TrieTree **root, char word[])
 
     int counter = calculateStringLength(word);
 
-    struct TrieTree* curr = *root;
+    struct TrieTree *current = *root;
 
     for (int j = 0; j < counter; j++) {
 
         int tableNumber = (int *)(word[j] - 'A');
 
-        if(curr->children[tableNumber] == NULL){
-            curr->children[tableNumber] = getNewTrieNode();
+        if(current->children[tableNumber] == NULL){
+            current->children[tableNumber] = getNewTrieNode();
         };
 
-        curr = curr->children[tableNumber];
+        current = current->children[tableNumber];
     }
 
-    curr->isLeaf = 1;
+    current->isLeaf = 1;
 }
 
 
-//int searchWord(struct TrieTree *root, char word[])
+int searchWord(struct TrieTree **root, char word[]){
+
+    if (root == NULL){
+        return 0;
+    }
+
+    struct TrieTree *current = *root;
+
+    int counter = calculateStringLength(word);
+
+    for (int j = 0; j < counter; j++) {
+
+        int tableNumber = (int *)(word[j] - 'A');
+
+        current = current->children[tableNumber];
+
+        if(current == NULL)
+        {
+            return 0;
+        }
+    }
+
+    return current->isLeaf;
+
+
+}
 
 
 //Funkcja liczaca dlugosc wpisanego slowa
@@ -118,6 +143,7 @@ int main() {
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
+                printf(searchWord(&root, word) ? "OBECNE" : "NIEOBECNE");
                 break;
             case 3:
                 printf("Wpisz slowo ktore ma byc usuniete z drzewa: ");
