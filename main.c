@@ -30,13 +30,14 @@ struct TrieTree *getNewTrieNode()
 }
 
 
+
 void insertWord(struct TrieTree **root, char word[])
 {
     if (root == NULL){
         return 0;
     }
 
-    int counter = 0;
+    int counter = calculateStringLength(word);
 
     struct TrieTree* curr = *root;
 
@@ -63,6 +64,23 @@ void insertWord(struct TrieTree **root, char word[])
 }
 
 
+//int searchWord(struct TrieTree *root, char word[])
+
+
+//Funkcja liczaca dlugosc wpisanego slowa
+int calculateStringLength(char word[]){
+
+    int counter = 0;
+    for (int i = 0; i < 32; i++) {
+
+        if(word[i] != NULL)
+        {
+            counter++;
+        }
+    }
+
+    return counter;
+}
 
 //Funkcja ktora zmienia litery na duze
 char toUpperCase(char word[]) {
@@ -81,7 +99,6 @@ int main() {
 
     struct TrieTree *root = getNewTrieNode();
 
-
     int choice;
     do{
         char word[WORD_SIZE];
@@ -99,6 +116,7 @@ int main() {
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
                 insertWord(&root, word);
+                puts("Slowo dodane pomyslnie");
                 break;
             case 2:
                 printf("Wpisz slowo ktore ma byc sprwadzone czy istnieje w drzewie: ");
