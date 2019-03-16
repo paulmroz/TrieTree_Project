@@ -6,6 +6,7 @@
 
 //Drzewo oparte jest na 26 literowym alfabecie
 #define CHAR_SIZE 26
+#define WORD_SIZE 32
 
 struct TrieTree {
 
@@ -28,6 +29,42 @@ struct TrieTree *getNewTrieNode()
     return  newNode;
 }
 
+
+void insertWord(struct TrieTree **root, char word[])
+{
+    if (root == NULL){
+        return 0;
+    }
+
+    int counter = 0;
+
+    struct TrieTree* curr = *root;
+
+    for (int i = 0; i < 32; i++) {
+
+        if(word[i] != NULL)
+        {
+            counter++;
+        }
+    }
+
+    for (int j = 0; j < counter; j++) {
+
+        int tableNumber = (int *)(word[j] - 'A');
+
+        if(curr->children[tableNumber] == NULL){
+            curr->children[tableNumber] = getNewTrieNode();
+        };
+
+        curr = curr->children[tableNumber];
+    }
+
+    curr->isLeaf = 1;
+}
+
+
+
+//Funkcja ktora zmienia litery na duze
 char toUpperCase(char word[]) {
     int i;
     for(i=0;i<=strlen(word);i++){
@@ -42,9 +79,15 @@ char toUpperCase(char word[]) {
 
 int main() {
 
+    struct TrieTree *root = getNewTrieNode();
+
+
     int choice;
     do{
-        char word[32];
+        char word[WORD_SIZE];
+        for (int i = 0; i < 32; ++i) {
+            word[i] = NULL;
+        }
         int result;
         printf("\n\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyjdz z programu \n\nTwoj wybor:");
         scanf("%d", &choice);
@@ -54,8 +97,8 @@ int main() {
             case 1:
                 printf("Wpisz slowo ktore ma być wpisane do drzewa: ");
                 scanf("%s",word);
-                toUpperCase(word);
-
+                word[32] = toUpperCase(word);
+                insertWord(&root, word);
                 break;
             case 2:
                 printf("Wpisz slowo ktore ma byc sprwadzone czy istnieje w drzewie: ");
