@@ -6,7 +6,7 @@
 
 //Drzewo oparte jest na 26 literowym alfabecie (niestety nie obsluguje polskich znakow)
 #define CHAR_SIZE 26
-//
+//Program przyjmuje 32 literowe slowo
 #define WORD_SIZE 32
 
 struct TrieTree {
@@ -113,10 +113,7 @@ int deleteWord(struct TrieTree **current, char word[], int j){
 
 
     if(i<counter){
-        if( *current != NULL
-            && (*current)->children[tableNumber] != NULL
-            && deleteWord(&((*current)->children[tableNumber]),word,i+1)
-            && (*current)->isWordEnd == 0)
+        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord(&((*current)->children[tableNumber]),word,i+1) && (*current)->isWordEnd == 0)
             {
                 if(!haveChildren(*current))
                 {
@@ -199,7 +196,12 @@ int main() {
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
-                printf(searchWord(&root, word) ? "OBECNE" : "NIEOBECNE");
+                //printf(searchWord(&root, word) ? "OBECNE" : "NIEOBECNE");
+                if(searchWord(&root, word)){
+                    printf("\033[01;32mSlowo jest obecne!\033[0m");
+                } else {
+                    printf("\033[22;31mSlowa nie ma w slowniku!\033[0m");
+                }
                 break;
             case 3:
                 printf("Wpisz slowo ktore ma byc usuniete z drzewa: ");
