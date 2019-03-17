@@ -111,9 +111,8 @@ int deleteWord(struct TrieTree **current, char word[], int j){
 
     int tableNumber = (int *)(word[i] - 'A');
 
-
     if(i<counter){
-        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord(&((*current)->children[tableNumber]),word,i+1) && (*current)->isWordEnd == 0)
+        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i+1) && (*current)->isWordEnd == 0)
             {
                 if(!haveChildren(*current))
                 {
@@ -175,7 +174,9 @@ int main() {
     struct TrieTree *root = createNewTrieNode();
 
     int choice;
+
     do{
+
         char word[WORD_SIZE];
 
         printf("\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyjdz z programu \n\nTwoj wybor:");
@@ -189,19 +190,14 @@ int main() {
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
                 insertWord(&root, word);
-                puts("\nSlowo dodane pomyslnie");
+                printf("\033[01;32mSlowo dodane pomyslnie!\033[0m");
                 break;
             case 2:
                 printf("Wpisz slowo ktore ma byc sprwadzone czy istnieje w drzewie: ");
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
-                //printf(searchWord(&root, word) ? "OBECNE" : "NIEOBECNE");
-                if(searchWord(&root, word)){
-                    printf("\033[01;32mSlowo jest obecne!\033[0m");
-                } else {
-                    printf("\033[22;31mSlowa nie ma w slowniku!\033[0m");
-                }
+                (searchWord(&root, word)) ? printf("\033[01;32mSlowo jest obecne!\033[0m"):printf("\033[22;31mSlowa nie ma w slowniku!\033[0m");
                 break;
             case 3:
                 printf("Wpisz slowo ktore ma byc usuniete z drzewa: ");
