@@ -11,19 +11,19 @@
 
 struct TrieTree {
 
-    int isLeaf;// 1 jezeli wezel jest lisciem
+    int isWordEnd;// 1 jezeli wezel jest lisciem
     struct TrieTree *children[CHAR_SIZE];
 };
 
 int calculateStringLength(char word[]);
 
-struct TrieTree *getNewTrieNode()
+struct TrieTree *createNewTrieNode()
 {
     //Dynamiczne alokowanie pamieci dla nowego wezla
     struct TrieTree *newNode = (struct TrieTree *)malloc(sizeof(struct TrieTree));
     if(newNode){
         //Ustawianie wartosci isLeafe wezla na 0 oraz wypelnianie tablicy wartosciami NULL
-        newNode->isLeaf = 0;
+        newNode->isWordEnd = 0;
         for (int i = 0; i < CHAR_SIZE; i++) {
             newNode->children[i] = NULL;
         }
@@ -47,13 +47,13 @@ int insertWord(struct TrieTree **root, char word[])
         int tableNumber = (int *)(word[j] - 'A');
 
         if(current->children[tableNumber] == NULL){
-            current->children[tableNumber] = getNewTrieNode();
+            current->children[tableNumber] = createNewTrieNode();
         };
 
         current = current->children[tableNumber];
     }
 
-    current->isLeaf = 1;
+    current->isWordEnd = 1;
 }
 
 
@@ -79,7 +79,7 @@ int searchWord(struct TrieTree **root, char word[]){
         }
     }
 
-    return current->isLeaf;
+    return current->isWordEnd;
 
 
 }
@@ -98,9 +98,9 @@ int haveChildren(struct TrieTree *current){
 
 
 
-int deleteWord(struct TrieTree **root, char word[], int j){
+int deleteWord(struct TrieTree **current, char word[], int j){
 
-    if(*root == NULL)
+    if(*current == NULL)
     {
         return 0;
     }
@@ -113,15 +113,15 @@ int deleteWord(struct TrieTree **root, char word[], int j){
 
 
     if(i<counter){
-        if( *root != NULL
-            && (*root)->children[tableNumber] != NULL
-            && deleteWord(&((*root)->children[tableNumber]),word,i+1)
-            && (*root)->isLeaf == 0)
+        if( *current != NULL
+            && (*current)->children[tableNumber] != NULL
+            && deleteWord(&((*current)->children[tableNumber]),word,i+1)
+            && (*current)->isWordEnd == 0)
             {
-                if(!haveChildren(*root))
+                if(!haveChildren(*current))
                 {
-                    free(*root);
-                    (*root) = NULL;
+                    free(*current);
+                    (*current) = NULL;
                     return 1;
                 }else{
                     return 0;
@@ -129,16 +129,16 @@ int deleteWord(struct TrieTree **root, char word[], int j){
             }
     }
 
-    if(i == counter  && (*root)->isLeaf)
+    if(i == counter  && (*current)->isWordEnd)
     {
-        if(!haveChildren(*root))
+        if(!haveChildren(*current))
         {
-            free(*root);
-            (*root) = NULL;
+            free(*current);
+            (*current) = NULL;
             return 1;
         }
         else {
-            (*root)->isLeaf = 0;
+            (*current)->isWordEnd = 0;
             return 0;
         }
     }
@@ -151,16 +151,7 @@ int deleteWord(struct TrieTree **root, char word[], int j){
 //Funkcja liczaca dlugosc wpisanego slowa
 int calculateStringLength(char word[]){
 
-    int counter = 0;
-    for (int i = 0; i < 32; i++) {
-
-        if(word[i] != NULL)
-        {
-            counter++;
-        }
-    }
-
-    return counter;
+    return (int *)strlen(word);
 }
 //Funkcja ktora zmienia litery na duze
 char toUpperCase(char word[]) {
@@ -184,7 +175,7 @@ void fillWordArrayWithNull(char word[])
 
 int main() {
 
-    struct TrieTree *root = getNewTrieNode();
+    struct TrieTree *root = createNewTrieNode();
 
     int choice;
     do{
