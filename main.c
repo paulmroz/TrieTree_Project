@@ -34,11 +34,9 @@ struct TrieTree *getNewTrieNode()
 
 
 
-void insertWord(struct TrieTree **root, char word[])
+int insertWord(struct TrieTree **root, char word[])
 {
-    if (root == NULL){
-        return 0;
-    }
+
     //Oblicznie dlugosci wpisywanego slowa
     int counter = calculateStringLength(word);
 
@@ -86,6 +84,69 @@ int searchWord(struct TrieTree **root, char word[]){
 
 }
 
+int haveChildren(struct TrieTree *current){
+    for (int i = 0; i < CHAR_SIZE; i++) {
+        if(current->children[i])
+        {
+            return 1 ;//ma dziecko
+        }
+    }
+
+    return 0;
+}
+
+
+
+
+int deleteWord(struct TrieTree **root, char word[], int j){
+
+    if(*root == NULL)
+    {
+        return 0;
+    }
+
+    int i = j;
+
+    int counter = calculateStringLength(word);
+
+    int tableNumber = (int *)(word[i] - 'A');
+
+
+    if(i<counter){
+        if( *root != NULL
+            && (*root)->children[tableNumber] != NULL
+            && deleteWord(&((*root)->children[tableNumber]),word,i+1)
+            && (*root)->isLeaf == 0)
+            {
+                if(!haveChildren(*root))
+                {
+                    free(*root);
+                    (*root) = NULL;
+                    return 1;
+                }else{
+                    return 0;
+                }
+            }
+    }
+
+    if(i == counter  && (*root)->isLeaf)
+    {
+        if(!haveChildren(*root))
+        {
+            free(*root);
+            (*root) = NULL;
+            return 1;
+        }
+        else {
+            (*root)->isLeaf = 0;
+            return 0;
+        }
+    }
+
+    return 0;
+
+}
+
 
 //Funkcja liczaca dlugosc wpisanego slowa
 int calculateStringLength(char word[]){
@@ -113,6 +174,7 @@ char toUpperCase(char word[]) {
     return word;
 };
 
+//Funkcja wypełnia tablice wartosciami NULL
 void fillWordArrayWithNull(char word[])
 {
     for (int i = 0; i < 32; ++i) {
@@ -128,7 +190,7 @@ int main() {
     do{
         char word[WORD_SIZE];
 
-        printf("\n\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyjdz z programu \n\nTwoj wybor:");
+        printf("\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyjdz z programu \n\nTwoj wybor:");
         scanf("%d", &choice);
 
         switch(choice)
@@ -153,6 +215,7 @@ int main() {
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
+                deleteWord(&root,word,0);
                 break;
             case 4: break;
             default:
