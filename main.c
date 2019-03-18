@@ -59,7 +59,7 @@ int insertWord(struct TrieTree **root, char word[])
 
 int searchWord(struct TrieTree **root, char word[]){
 
-    if (root == NULL){
+    if (*root == NULL){
         return 0;
     }
 
@@ -91,7 +91,6 @@ int haveChildren(struct TrieTree *current){
             return 1 ;//ma dziecko
         }
     }
-
     return 0;
 }
 
@@ -113,16 +112,16 @@ int deleteWord(struct TrieTree **current, char word[], int j){
 
     if(i<counter){
         if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i+1) && (*current)->isWordEnd == 0)
+        {
+            if(!haveChildren(*current))
             {
-                if(!haveChildren(*current))
-                {
-                    free(*current);
-                    (*current) = NULL;
-                    return 1;
-                }else{
-                    return 0;
-                }
+                free(*current);
+                (*current) = NULL;
+                return 1;
+            }else{
+                return 0;
             }
+        }
     }
 
     if(i == counter  && (*current)->isWordEnd)
@@ -193,7 +192,7 @@ int main() {
                 printf("\033[01;32mSlowo dodane pomyslnie!\033[0m");
                 break;
             case 2:
-                printf("Wpisz slowo ktore ma byc sprwadzone czy istnieje w drzewie: ");
+                printf("Wpisz slowo ktore ma byc sprawdzone czy istnieje w drzewie: ");
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
@@ -204,7 +203,7 @@ int main() {
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
-                deleteWord(&root,word,0);
+                deleteWord(&root,word,0) ? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m");;
                 break;
             case 4: break;
             default:
