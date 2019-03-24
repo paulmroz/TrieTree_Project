@@ -17,6 +17,7 @@ struct TrieTree {
 
 int calculateStringLength(char word[]);
 
+//Funkcja ktora tworzy nowy Node
 struct TrieTree *createNewTrieNode()
 {
     //Dynamiczne alokowanie pamieci dla nowego wezla
@@ -33,7 +34,7 @@ struct TrieTree *createNewTrieNode()
 }
 
 
-
+//Funkcja dodajaca slowo
 int insertWord(struct TrieTree **root, char word[])
 {
 
@@ -41,22 +42,24 @@ int insertWord(struct TrieTree **root, char word[])
     int counter = calculateStringLength(word);
 
     struct TrieTree *current = *root;
-
+    //Petla wykona sie tyle razy ile jest slow w dodawanym slowie
     for (int j = 0; j < counter; j++) {
 
+        //Obliczanie indeksu w tablocy do sprawdzenia
         int tableNumber = (int *)(word[j] - 'A');
-
+        //Jezeli w tabeli children danego Node nie ma litery z wpisywanego slowa to jest tworzone
         if(current->children[tableNumber] == NULL){
             current->children[tableNumber] = createNewTrieNode();
         };
-
+        //Przejcie do kolejnego Node
         current = current->children[tableNumber];
     }
-
+    //Po dodaniu wszystich liter ostatni Node oznaczany jest jako koniec slowa;
     current->isWordEnd = 1;
 }
 
 
+//Funkcja sprwadzajaca czy dane slowo istnieje
 int searchWord(struct TrieTree **root, char word[]){
 
     if (*root == NULL){
@@ -67,6 +70,8 @@ int searchWord(struct TrieTree **root, char word[]){
 
     int counter = calculateStringLength(word);
 
+    //Sprawdzanie czy w danym Node jest litera szukanego slowa jezeli
+    // nie ma funkcja zwroci 0 jezeli jest sprwadza czy jest to koniec slowa i zwroci fale isWordEnd;
     for (int j = 0; j < counter; j++) {
 
         int tableNumber = (int *)(word[j] - 'A');
@@ -84,6 +89,8 @@ int searchWord(struct TrieTree **root, char word[]){
 
 }
 
+
+//Funkcja sprwadza czy dany node ma szukane slowo
 int haveChildren(struct TrieTree *current){
     for (int i = 0; i < CHAR_SIZE; i++) {
         if(current->children[i])
@@ -96,7 +103,7 @@ int haveChildren(struct TrieTree *current){
 
 
 
-
+//Funkcja usuwajaca slowo
 int deleteWord(struct TrieTree **current, char word[], int j){
 
     if(*current == NULL)
@@ -111,7 +118,7 @@ int deleteWord(struct TrieTree **current, char word[], int j){
     int tableNumber = (int *)(word[i] - 'A');
 
     if(i<counter){
-        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i+1) && (*current)->isWordEnd == 0)
+        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i++) && (*current)->isWordEnd == 0)
         {
             if(!haveChildren(*current))
             {
