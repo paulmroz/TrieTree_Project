@@ -15,6 +15,7 @@ The C compiler identification is GNU, found in "/home/paulm/Desktop/Pulpit/Proje
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 
 Run Build Command:"/usr/bin/make" "cmTC_62d09/fast"
 /usr/bin/make -f CMakeFiles/cmTC_62d09.dir/build.make CMakeFiles/cmTC_62d09.dir/build
@@ -25,12 +26,23 @@ Linking C executable cmTC_62d09
 /home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62d09.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_62d09.dir/testCCompiler.c.o  -o cmTC_62d09 
 
+=======
+Run Build Command:"/usr/bin/make" "cmTC_f585e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f585e.dir/build.make CMakeFiles/cmTC_f585e.dir/build
+make[1]: Entering directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f585e.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f585e.dir/testCCompiler.c.o   -c /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f585e
+/home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f585e.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_f585e.dir/testCCompiler.c.o  -o cmTC_f585e 
+>>>>>>> delete_word_brach
 make[1]: Leaving directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 
 Run Build Command:"/usr/bin/make" "cmTC_ff023/fast"
 /usr/bin/make -f CMakeFiles/cmTC_ff023.dir/build.make CMakeFiles/cmTC_ff023.dir/build
@@ -41,6 +53,16 @@ Linking C executable cmTC_ff023
 /home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff023.dir/link.txt --verbose=1
 /usr/bin/cc     -v CMakeFiles/cmTC_ff023.dir/CMakeCCompilerABI.c.o  -o cmTC_ff023 
 
+=======
+Run Build Command:"/usr/bin/make" "cmTC_26577/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26577.dir/build.make CMakeFiles/cmTC_26577.dir/build
+make[1]: Entering directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o   -c /home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_26577
+/home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26577.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o  -o cmTC_26577 
+>>>>>>> delete_word_brach
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
@@ -50,11 +72,17 @@ Thread model: posix
 gcc version 8.2.1 20181127 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+<<<<<<< HEAD
 
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ff023' '-mtune=generic' '-march=x86-64'
  /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7B9N0X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ff023 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_ff023.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ff023' '-mtune=generic' '-march=x86-64'
 
+=======
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_26577' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnSM9Hj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_26577 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_26577' '-mtune=generic' '-march=x86-64'
+>>>>>>> delete_word_brach
 make[1]: Leaving directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -62,6 +90,7 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
+<<<<<<< HEAD
 
   ignore line: [Run Build Command:"/usr/bin/make" "cmTC_ff023/fast"]
   ignore line: [/usr/bin/make -f CMakeFiles/cmTC_ff023.dir/build.make CMakeFiles/cmTC_ff023.dir/build]
@@ -72,6 +101,16 @@ Parsed C implicit link information from above output:
   ignore line: [/home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff023.dir/link.txt --verbose=1]
   ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_ff023.dir/CMakeCCompilerABI.c.o  -o cmTC_ff023 ]
 
+=======
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_26577/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_26577.dir/build.make CMakeFiles/cmTC_26577.dir/build]
+  ignore line: [make[1]: Entering directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o   -c /home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_26577]
+  ignore line: [/home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26577.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o  -o cmTC_26577 ]
+>>>>>>> delete_word_brach
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
@@ -81,16 +120,25 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.2.1 20181127 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+<<<<<<< HEAD
 
   ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ff023' '-mtune=generic' '-march=x86-64']
   link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7B9N0X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ff023 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_ff023.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
 
+=======
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_26577' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnSM9Hj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_26577 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+>>>>>>> delete_word_brach
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
+<<<<<<< HEAD
 
     arg [-plugin-opt=-fresolution=/tmp/cc7B9N0X.res] ==> ignore
+=======
+    arg [-plugin-opt=-fresolution=/tmp/ccnSM9Hj.res] ==> ignore
+>>>>>>> delete_word_brach
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -105,9 +153,13 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
+<<<<<<< HEAD
 
     arg [cmTC_ff023] ==> ignore
 
+=======
+    arg [cmTC_26577] ==> ignore
+>>>>>>> delete_word_brach
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
@@ -116,9 +168,13 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
+<<<<<<< HEAD
 
     arg [CMakeFiles/cmTC_ff023.dir/CMakeCCompilerABI.c.o] ==> ignore
 
+=======
+    arg [CMakeFiles/cmTC_26577.dir/CMakeCCompilerABI.c.o] ==> ignore
+>>>>>>> delete_word_brach
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -144,6 +200,7 @@ Parsed C implicit link information from above output:
 
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp
+<<<<<<< HEAD
 
 
 Run Build Command:"/usr/bin/make" "cmTC_e55e7/fast"
@@ -155,6 +212,17 @@ Linking C executable cmTC_e55e7
 /home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e55e7.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_e55e7.dir/feature_tests.c.o  -o cmTC_e55e7 
 
+=======
+
+Run Build Command:"/usr/bin/make" "cmTC_510ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_510ca.dir/build.make CMakeFiles/cmTC_510ca.dir/build
+make[1]: Entering directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_510ca.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_510ca.dir/feature_tests.c.o   -c /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_510ca
+/home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_510ca.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_510ca.dir/feature_tests.c.o  -o cmTC_510ca 
+>>>>>>> delete_word_brach
 make[1]: Leaving directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -166,6 +234,7 @@ make[1]: Leaving directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project
 
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp
+<<<<<<< HEAD
 
 Run Build Command:"/usr/bin/make" "cmTC_dbddb/fast"
 /usr/bin/make -f CMakeFiles/cmTC_dbddb.dir/build.make CMakeFiles/cmTC_dbddb.dir/build
@@ -176,6 +245,17 @@ Linking C executable cmTC_dbddb
 /home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbddb.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_dbddb.dir/feature_tests.c.o  -o cmTC_dbddb 
 
+=======
+
+Run Build Command:"/usr/bin/make" "cmTC_47444/fast"
+/usr/bin/make -f CMakeFiles/cmTC_47444.dir/build.make CMakeFiles/cmTC_47444.dir/build
+make[1]: Entering directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47444.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_47444.dir/feature_tests.c.o   -c /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_47444
+/home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47444.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_47444.dir/feature_tests.c.o  -o cmTC_47444 
+>>>>>>> delete_word_brach
 make[1]: Leaving directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -188,6 +268,7 @@ make[1]: Leaving directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 
 Run Build Command:"/usr/bin/make" "cmTC_9c141/fast"
 /usr/bin/make -f CMakeFiles/cmTC_9c141.dir/build.make CMakeFiles/cmTC_9c141.dir/build
@@ -198,6 +279,16 @@ Linking C executable cmTC_9c141
 /home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c141.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_9c141.dir/feature_tests.c.o  -o cmTC_9c141 
 
+=======
+Run Build Command:"/usr/bin/make" "cmTC_80049/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80049.dir/build.make CMakeFiles/cmTC_80049.dir/build
+make[1]: Entering directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80049.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_80049.dir/feature_tests.c.o   -c /home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_80049
+/home/paulm/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80049.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_80049.dir/feature_tests.c.o  -o cmTC_80049 
+>>>>>>> delete_word_brach
 make[1]: Leaving directory '/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 

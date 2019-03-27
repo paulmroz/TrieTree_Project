@@ -15,6 +15,10 @@
     <list default="true" id="2e6f70b1-38bc-493a-9128-4036a3084ef5" name="Default Changelist" comment="" />
 =======
     <list default="true" id="2e6f70b1-38bc-493a-9128-4036a3084ef5" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> delete_word_brach
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
@@ -30,6 +34,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+>>>>>>> delete_word_brach
     </list>
 >>>>>>> first_milestone
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -46,11 +54,16 @@
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="30">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
 =======
             <state relative-caret-position="1470">
               <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+=======
+            <state relative-caret-position="55">
+              <caret line="120" column="135" selection-start-line="120" selection-start-column="135" selection-end-line="120" selection-end-column="135" />
+>>>>>>> delete_word_brach
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -83,6 +96,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
     <option name="x" value="50" />
@@ -123,6 +137,13 @@
         </subPane>
       </pane>
     </panes>
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="42" />
+    <option name="y" value="20" />
+    <option name="width" value="1276" />
+    <option name="height" value="689" />
+>>>>>>> delete_word_brach
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -130,7 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,11 +162,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/CLionProjects/TrieTree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -197,6 +218,9 @@
       <updated>1552503887447</updated>
       <workItem from="1552503889089" duration="930000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> delete_word_brach
       <workItem from="1552670010092" duration="31502000" />
       <workItem from="1552822241196" duration="42000" />
       <workItem from="1552823714754" duration="72000" />
@@ -204,15 +228,20 @@
       <workItem from="1552924443454" duration="82000" />
       <workItem from="1552928931758" duration="61000" />
       <workItem from="1553375546907" duration="150000" />
+<<<<<<< HEAD
       <workItem from="1553422057775" duration="2487000" />
       <workItem from="1553681560382" duration="260000" />
 =======
       <workItem from="1552670010092" duration="19912000" />
 >>>>>>> first_milestone
+=======
+      <workItem from="1553422057775" duration="2476000" />
+>>>>>>> delete_word_brach
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="133000" />
   </component>
@@ -223,6 +252,9 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19242424" />
 =======
     <option name="totallyTimeSpent" value="20898000" />
+=======
+    <option name="totallyTimeSpent" value="50382000" />
+>>>>>>> delete_word_brach
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -234,14 +266,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="0" width="1366" height="736" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19242424" />
 >>>>>>> first_milestone
+=======
+    <frame x="0" y="0" width="1366" height="736" extended-state="7" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19090909" />
+>>>>>>> delete_word_brach
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.16636851" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924242" weight="0.43822077" />
@@ -249,11 +288,16 @@
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4925865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.14827017" />
 >>>>>>> first_milestone
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.50576603" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924242" weight="0.43822077" />
+>>>>>>> delete_word_brach
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3294893" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007576" side_tool="true" weight="0.3756178" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3294893" />
@@ -265,6 +309,12 @@
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.369028" />
 >>>>>>> first_milestone
+=======
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007576" side_tool="true" weight="0.3756178" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3294893" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3294893" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.6392092" />
+>>>>>>> delete_word_brach
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -302,7 +352,34 @@
     <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+<<<<<<< HEAD
 >>>>>>> first_milestone
+=======
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> delete_word_brach
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -354,11 +431,16 @@
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
 =======
         <state relative-caret-position="1470">
           <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+=======
+        <state relative-caret-position="55">
+          <caret line="120" column="135" selection-start-line="120" selection-start-column="135" selection-end-line="120" selection-end-column="135" />
+>>>>>>> delete_word_brach
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
