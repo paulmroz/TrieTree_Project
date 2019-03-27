@@ -34,10 +34,9 @@ struct TrieTree *createNewTrieNode()
 }
 
 
-<<<<<<< HEAD
-=======
+
 //Funkcja dodajaca slowo
->>>>>>> delete_word_brach
+
 int insertWord(struct TrieTree **root, char word[])
 {
 
@@ -120,7 +119,9 @@ int deleteWord(struct TrieTree **current, char word[], int j){
 
     int tableNumber = (int *)(word[i] - 'A');
 
+    //Warunek wykonujacy sie do momentu dojscia do ostatniej litery w slowie
     if(i<counter){
+        //Funkcja rekurencyjna przechodzaca do ostatniej litery w slowie
         if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i++) && (*current)->isWordEnd == 0)
         {
             if(!haveChildren(*current))
@@ -133,17 +134,19 @@ int deleteWord(struct TrieTree **current, char word[], int j){
             }
         }
     }
-
-    if(i == counter  && (*current)->isWordEnd)
+    //Po dojsciu do konca slowa
+    if((i == counter)  && (*current)->isWordEnd)
     {
+        //jezeli aktualny wezel jest koncem slowa i nie ma dzieci
         if(!haveChildren(*current))
         {
-            free(*current);
+            free(*current);//usun slowo
             (*current) = NULL;
             return 1;
         }
+        //Jezeli aktualny wezel jest koncem slowa  i posiada dzieci
         else {
-            (*current)->isWordEnd = 0;
+            (*current)->isWordEnd = 0;//Odznacz wezel jako koniec slowa
             return 0;
         }
     }
