@@ -178,7 +178,7 @@ void fillWordArrayWithNull(char word[])
 int main() {
 
     struct TrieTree *root = createNewTrieNode();
-
+    struct TrieTree *secondRootPointer = root;
     int choice;
 
     do{
@@ -211,6 +211,7 @@ int main() {
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
                 deleteWord(&root,word,0) ? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m");;
+                root = secondRootPointer;
                 break;
             case 4: break;
             default:
