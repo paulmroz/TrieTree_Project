@@ -36,7 +36,6 @@ struct TrieTree *createNewTrieNode()
 
 
 //Funkcja dodajaca slowo
-
 int insertWord(struct TrieTree **root, char word[])
 {
 
@@ -117,12 +116,12 @@ int deleteWord(struct TrieTree **current, char word[], int j){
 
     int counter = calculateStringLength(word);
 
-    int tableNumber = (int *)(word[i] - 'A');
+    int tableNumber = (int)(word[i] - 'A');
 
     //Warunek wykonujacy sie do momentu dojscia do ostatniej litery w slowie
     if(i<counter){
         //Funkcja rekurencyjna przechodzaca do ostatniej litery w slowie
-        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i++) && (*current)->isWordEnd == 0)
+        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i+1) && (*current)->isWordEnd == 0)
         {
             if(!haveChildren(*current))
             {
@@ -135,7 +134,7 @@ int deleteWord(struct TrieTree **current, char word[], int j){
         }
     }
     //Po dojsciu do konca slowa
-    if((i == counter)  && (*current)->isWordEnd)
+    if(i == counter  && (*current)->isWordEnd)
     {
         //jezeli aktualny wezel jest koncem slowa i nie ma dzieci
         if(!haveChildren(*current))
@@ -185,6 +184,8 @@ int main() {
 
     struct TrieTree *root = createNewTrieNode();
 
+    struct TrieTree *secondRootPointer = root;
+
     int choice;
 
     do{
@@ -216,7 +217,8 @@ int main() {
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
-                deleteWord(&root,word,0) ? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m");;
+                deleteWord(&root,word,0) /*? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m")*/;
+                root = secondRootPointer;
                 break;
             case 4: break;
             default:
