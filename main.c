@@ -115,10 +115,12 @@ int deleteWord(struct TrieTree **current, char word[], int j){
 
     int counter = calculateStringLength(word);
 
-    int tableNumber = (int *)(word[i] - 'A');
+    int tableNumber = (int)(word[i] - 'A');
 
+    //Warunek wykonujacy sie do momentu dojscia do ostatniej litery w slowie
     if(i<counter){
-        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i++) && (*current)->isWordEnd == 0)
+        //Funkcja rekurencyjna przechodzaca do ostatniej litery w slowie
+        if( *current != NULL && (*current)->children[tableNumber] != NULL && deleteWord((&((*current)->children[tableNumber])),word,i+1) && (*current)->isWordEnd == 0)
         {
             if(!haveChildren(*current))
             {
@@ -130,17 +132,19 @@ int deleteWord(struct TrieTree **current, char word[], int j){
             }
         }
     }
-
+    //Po dojsciu do konca slowa
     if(i == counter  && (*current)->isWordEnd)
     {
+        //jezeli aktualny wezel jest koncem slowa i nie ma dzieci
         if(!haveChildren(*current))
         {
-            free(*current);
+            free(*current);//usun slowo
             (*current) = NULL;
             return 1;
         }
+            //Jezeli aktualny wezel jest koncem slowa  i posiada dzieci
         else {
-            (*current)->isWordEnd = 0;
+            (*current)->isWordEnd = 0;//Odznacz wezel jako koniec slowa
             return 0;
         }
     }
@@ -148,6 +152,7 @@ int deleteWord(struct TrieTree **current, char word[], int j){
     return 0;
 
 }
+
 
 
 //Funkcja liczaca dlugosc wpisanego slowa
