@@ -11,7 +11,7 @@
 
 struct TrieTree {
 
-    int isWordEnd;// 1 jezeli wezel jest lisciem
+    int isWordEnd;// 1 jezeli wezel jest koncem slowa
     struct TrieTree *children[CHAR_SIZE];
 };
 
@@ -215,7 +215,7 @@ int main() {
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
-                deleteWord(&root,word,0) ? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m");;
+                deleteWord(&root,word,0) /*? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m")*/;
                 root = secondRootPointer;
                 break;
             case 4: break;
