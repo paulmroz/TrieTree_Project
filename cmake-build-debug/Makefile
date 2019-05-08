@@ -123,32 +123,32 @@ TrieTree_Project/fast:
 	$(MAKE) -f CMakeFiles/TrieTree_Project.dir/build.make CMakeFiles/TrieTree_Project.dir/build
 .PHONY : TrieTree_Project/fast
 
-main.o: main.c.o
+source/main.o: source/main.c.o
 
-.PHONY : main.o
+.PHONY : source/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/TrieTree_Project.dir/build.make CMakeFiles/TrieTree_Project.dir/main.c.o
-.PHONY : main.c.o
+source/main.c.o:
+	$(MAKE) -f CMakeFiles/TrieTree_Project.dir/build.make CMakeFiles/TrieTree_Project.dir/source/main.c.o
+.PHONY : source/main.c.o
 
-main.i: main.c.i
+source/main.i: source/main.c.i
 
-.PHONY : main.i
+.PHONY : source/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/TrieTree_Project.dir/build.make CMakeFiles/TrieTree_Project.dir/main.c.i
-.PHONY : main.c.i
+source/main.c.i:
+	$(MAKE) -f CMakeFiles/TrieTree_Project.dir/build.make CMakeFiles/TrieTree_Project.dir/source/main.c.i
+.PHONY : source/main.c.i
 
-main.s: main.c.s
+source/main.s: source/main.c.s
 
-.PHONY : main.s
+.PHONY : source/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/TrieTree_Project.dir/build.make CMakeFiles/TrieTree_Project.dir/main.c.s
-.PHONY : main.c.s
+source/main.c.s:
+	$(MAKE) -f CMakeFiles/TrieTree_Project.dir/build.make CMakeFiles/TrieTree_Project.dir/source/main.c.s
+.PHONY : source/main.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TrieTree_Project"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... source/main.o"
+	@echo "... source/main.i"
+	@echo "... source/main.s"
 .PHONY : help
 
 

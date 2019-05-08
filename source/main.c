@@ -1,21 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
+#include "../headers/main.h"
 
-
-//Drzewo oparte jest na 26 literowym alfabecie (niestety nie obsluguje polskich znakow)
 #define CHAR_SIZE 26
-//Program przyjmuje 32 literowe slowo
 #define WORD_SIZE 32
 
-struct TrieTree {
 
-    int isWordEnd;// 1 jezeli wezel jest koncem slowa
-    struct TrieTree *children[CHAR_SIZE];
-};
+int main() {
 
-int calculateStringLength(char word[]);
+    startMenu();
+    return 0;
+}
+
 
 //Funkcja ktora tworzy nowy Node
 struct TrieTree *createNewTrieNode()
@@ -180,8 +174,8 @@ void fillWordArrayWithNull(char word[])
     }
 }
 
-int main() {
 
+void startMenu(){
     struct TrieTree *root = createNewTrieNode();
     struct TrieTree *secondRootPointer = root;
     int choice;
@@ -223,6 +217,4 @@ int main() {
                 break;
         }
     }while(choice != 4);
-
-    return 0;
 }

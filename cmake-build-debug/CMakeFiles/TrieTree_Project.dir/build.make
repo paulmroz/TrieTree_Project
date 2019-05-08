@@ -57,27 +57,27 @@ include CMakeFiles/TrieTree_Project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TrieTree_Project.dir/flags.make
 
-CMakeFiles/TrieTree_Project.dir/main.c.o: CMakeFiles/TrieTree_Project.dir/flags.make
-CMakeFiles/TrieTree_Project.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TrieTree_Project.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrieTree_Project.dir/main.c.o   -c /home/paulm/Desktop/Desktop/Projects/TrieTree_Project/main.c
+CMakeFiles/TrieTree_Project.dir/source/main.c.o: CMakeFiles/TrieTree_Project.dir/flags.make
+CMakeFiles/TrieTree_Project.dir/source/main.c.o: ../source/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TrieTree_Project.dir/source/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrieTree_Project.dir/source/main.c.o   -c /home/paulm/Desktop/Desktop/Projects/TrieTree_Project/source/main.c
 
-CMakeFiles/TrieTree_Project.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TrieTree_Project.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paulm/Desktop/Desktop/Projects/TrieTree_Project/main.c > CMakeFiles/TrieTree_Project.dir/main.c.i
+CMakeFiles/TrieTree_Project.dir/source/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TrieTree_Project.dir/source/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/paulm/Desktop/Desktop/Projects/TrieTree_Project/source/main.c > CMakeFiles/TrieTree_Project.dir/source/main.c.i
 
-CMakeFiles/TrieTree_Project.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TrieTree_Project.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paulm/Desktop/Desktop/Projects/TrieTree_Project/main.c -o CMakeFiles/TrieTree_Project.dir/main.c.s
+CMakeFiles/TrieTree_Project.dir/source/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TrieTree_Project.dir/source/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/paulm/Desktop/Desktop/Projects/TrieTree_Project/source/main.c -o CMakeFiles/TrieTree_Project.dir/source/main.c.s
 
 # Object files for target TrieTree_Project
 TrieTree_Project_OBJECTS = \
-"CMakeFiles/TrieTree_Project.dir/main.c.o"
+"CMakeFiles/TrieTree_Project.dir/source/main.c.o"
 
 # External object files for target TrieTree_Project
 TrieTree_Project_EXTERNAL_OBJECTS =
 
-TrieTree_Project: CMakeFiles/TrieTree_Project.dir/main.c.o
+TrieTree_Project: CMakeFiles/TrieTree_Project.dir/source/main.c.o
 TrieTree_Project: CMakeFiles/TrieTree_Project.dir/build.make
 TrieTree_Project: CMakeFiles/TrieTree_Project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable TrieTree_Project"

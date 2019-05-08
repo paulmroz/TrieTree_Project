@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TrieTree_Project.dir/main.c.o"
+  "CMakeFiles/TrieTree_Project.dir/source/main.c.o"
   "TrieTree_Project.pdb"
   "TrieTree_Project"
 )
