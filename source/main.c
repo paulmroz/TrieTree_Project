@@ -7,8 +7,10 @@
 int main() {
 
     startMenu();
+
     return 0;
 }
+
 
 
 //Funkcja ktora tworzy nowy Node
@@ -51,6 +53,8 @@ int insertWord(struct TrieTree **root, char word[])
     //Po dodaniu wszystich liter ostatni Node oznaczany jest jako koniec slowa;
     current->isWordEnd = 1;
 }
+
+
 
 
 //Funkcja sprwadzajaca czy dane slowo istnieje
@@ -183,18 +187,19 @@ void startMenu(){
     do{
 
         char word[WORD_SIZE];
-
         printf("\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyjdz z programu \n\nTwoj wybor:");
         scanf("%d", &choice);
-
+        system("clear");
         switch(choice)
         {
             case 1:
+
                 printf("Wpisz slowo ktore ma być wpisane do drzewa: ");
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
                 word[32] = toUpperCase(word);
                 insertWord(&root, word);
+                system("clear");
                 printf("\033[01;32mSlowo dodane pomyslnie!\033[0m");
                 break;
             case 2:
