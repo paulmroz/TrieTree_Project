@@ -32,13 +32,13 @@ int searchWord(struct TrieTree **root, char word[]);
 int haveChildren(struct TrieTree *current);
 
 //Funkcja usuwajaca slowo
-int deleteWord(struct TrieTree **current, char word[], int j);
+//int deleteWord(struct TrieTree **current, char word[], int j);
 
 //Funkcja liczaca dlugosc wpisanego slowa
 int calculateStringLength(char word[]);
 
 //Funkcja ktora zmienia litery na duze
-char toUpperCase(char word[]);
+void toUpperCase(char word[]);
 
 //Funkcja wypełnia tablice wartosciami NULL
 void fillWordArrayWithNull(char word[]);

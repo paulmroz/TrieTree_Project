@@ -100,7 +100,79 @@ int haveChildren(struct TrieTree *current){
 }
 
 
+///////////////////////////
+// check if a trie node has no children
+bool isFreeNode(struct TrieTree* p)
+{
+    int i;
+    for(i = 0; i < CHAR_SIZE; ++i)
+    {
+        if(p->children[i])
+            return false;
+    }
+    return true;
+}
 
+bool isLeafNode(struct TrieTree* p)
+{
+    return p->isWordEnd == 1;
+}
+
+bool deleteHelper(struct TrieTree* root, char* key, int level, int len)
+{
+    int ind;
+    //check if the key is in the trie.
+    if(root!=NULL)
+    {
+        if(level==len)
+        {
+            //check if the key is in the trie.
+            if (root->isWordEnd)
+            {
+                root->isWordEnd = 0;
+
+                //Is it an unique key?
+                return isFreeNode(root);
+            }
+        }
+        else
+        {
+            ind = key[level] - 'A';
+            if(deleteHelper(root->children[ind], key, level+1, len))
+            {
+                free(root->children[ind]);
+                root->children[ind] = NULL;
+
+                //check if the node is an unique key node. Case (2) and
+                //and case (4) can both generates unique key node.
+                if(!isLeafNode(root) && isFreeNode(root))
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+    }
+    return false;
+}
+
+void deleteWord(struct TrieTree* root, char key[])
+{
+    int len = (int *)strlen(key);
+    if(len>0)
+    {
+        //check if the key is the only one in the trie
+        if(deleteHelper(root, key, 0, len))
+        {
+            root = NULL;
+            free(root);
+        }
+    }
+}
+//////////////////////////////////
+
+
+/*
 //Funkcja usuwajaca slowo
 int deleteWord(struct TrieTree **current, char word[], int j){
 
@@ -150,7 +222,7 @@ int deleteWord(struct TrieTree **current, char word[], int j){
     return 0;
 
 }
-
+*/
 
 
 //Funkcja liczaca dlugosc wpisanego slowa
@@ -159,7 +231,7 @@ int calculateStringLength(char word[]){
     return (int *)strlen(word);
 }
 //Funkcja ktora zmienia litery na duze
-char toUpperCase(char word[]) {
+void toUpperCase(char word[]) {
     int i;
     for(i=0;i<=strlen(word);i++){
         if(word[i]>=97 && word[i]<=122)
@@ -167,7 +239,6 @@ char toUpperCase(char word[]) {
             word[i]=word[i]-32;
         }
     }
-    return word;
 };
 
 //Funkcja wypełnia tablice wartosciami NULL
@@ -179,15 +250,61 @@ void fillWordArrayWithNull(char word[])
 }
 
 
+void printWord(char* str, int n)
+{
+    puts("");
+    for(int i=0; i<n; i++)
+    {
+        printf("%c", str[i]);
+    }
+}
+//Funkcja wypisujaca wszystkie slowa z drzewa
+void printAllWords(struct TrieTree *root, char* word, int pos)
+{
+    if(root == NULL)
+    {
+        return;
+    }
+
+    if(root->isWordEnd)
+    {
+        printWord(word, pos);
+    }
+    for(int i=0; i<CHAR_SIZE; i++)
+    {
+        if(root->children[i] != NULL)
+        {
+            word[pos] = i+'A';
+            printAllWords(root->children[i], word, pos+1);
+        }
+    }
+}
+void checkRootPointer(struct TrieTree *root){
+    int counter = 0;
+    for (int j = 0; j < CHAR_SIZE; j++) {
+        if(root->children[j] == NULL /*|| root->children[j] == 0*/)
+        {
+            counter++;
+        }
+    }
+
+    if(counter==26)
+    {
+        printf("\033[22;31m\nDrzewo jest puste!\033[0m");
+    }
+}
+
+
 void startMenu(){
     struct TrieTree *root = createNewTrieNode();
-    struct TrieTree *secondRootPointer = root;
+    //struct TrieTree *secondRootPointer = *(&root);
+    //int *secondRootPointer = root;
     int choice;
 
     do{
 
         char word[WORD_SIZE];
-        printf("\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyjdz z programu \n\nTwoj wybor:");
+        printf("\n1. Wstaw do drzewa \n2. Sprawdz czy istnieje \n3. Usun z Drzewa \n4. Wyswietl zawartosc drzewa \n5. Wyjdz z programu \n\nTwoj wybor:");
         scanf("%d", &choice);
         system("clear");
         switch(choice)
@@ -197,7 +314,7 @@ void startMenu(){
                 printf("Wpisz slowo ktore ma być wpisane do drzewa: ");
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
-                word[32] = toUpperCase(word);
+                toUpperCase(word);
                 insertWord(&root, word);
                 system("clear");
                 printf("\033[01;32mSlowo dodane pomyslnie!\033[0m");
@@ -206,20 +323,30 @@ void startMenu(){
                 printf("Wpisz slowo ktore ma byc sprawdzone czy istnieje w drzewie: ");
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
-                word[32] = toUpperCase(word);
+                toUpperCase(word);
                 (searchWord(&root, word)) ? printf("\033[01;32mSlowo jest obecne!\033[0m"):printf("\033[22;31mSlowa nie ma w slowniku!\033[0m");
                 break;
             case 3:
                 printf("Wpisz slowo ktore ma byc usuniete z drzewa: ");
                 fillWordArrayWithNull(word);
                 scanf("%s",word);
-                word[32] = toUpperCase(word);
-                deleteWord(&root,word,0) /*? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m")*/;
-                root = secondRootPointer;
+                toUpperCase(word);
+                //deleteWord(&root,word,0) /*? printf("\033[01;32mSlowo usunięte!\033[0m"):printf("\033[22;31mSlowo nie zostalo usuniete!\033[0m")*/;
+                //root = *(&secondRootPointer);
+                deleteWord(root,word);
                 break;
-            case 4: break;
+            case 4:
+                printf("\033[01;32mWszystkie slowa obecne w drzewie:\033[0m");
+                printf("\033[01;32m\n/////////////////////////\033[0m");
+                fillWordArrayWithNull(word);
+                checkRootPointer(root);
+                printAllWords(root,word,0);
+                printf("\033[01;32m\n/////////////////////////\033[0m");
+                fillWordArrayWithNull(word);
+                break;
+            case 5:break;
             default:
                 break;
         }
-    }while(choice != 4);
+    }while(choice != 5);
 }

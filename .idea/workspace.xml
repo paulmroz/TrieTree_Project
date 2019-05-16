@@ -12,23 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fb8d5f8-87dc-43b2-9934-8343d49ba644" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/headers/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/source/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +32,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="233">
+              <caret line="350" column="22" selection-start-line="350" selection-start-column="22" selection-end-line="350" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/stdio.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
             </state>
           </provider>
         </entry>
@@ -55,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/headers/main.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            <state relative-caret-position="330">
+              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
               <folding>
                 <element signature="e#65#83#0" expanded="true" />
               </folding>
@@ -178,11 +173,12 @@
       <workItem from="1553375546907" duration="150000" />
       <workItem from="1553422057775" duration="2476000" />
       <workItem from="1554219497219" duration="20000" />
+      <workItem from="1558029383527" duration="7814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56919000" />
+    <option name="totallyTimeSpent" value="64733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -197,22 +193,22 @@
     <frame x="0" y="312" width="1366" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19090909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19393939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.049423393" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924242" weight="0.43822077" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3294893" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007576" side_tool="true" weight="0.3756178" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3294893" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3294893" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.2553542" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.33113673" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3294893" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294893" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007576" side_tool="true" weight="0.3756178" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294893" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.3294893" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.79242176" />
+      <window_info anchor="bottom" x="1366" y="29" width="1920" height="1051" id="Debug" maximized="true" order="12" sideWeight="0.49924242" type="WINDOWED" weight="0.6062603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -272,18 +268,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/headers/main.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        <state relative-caret-position="330">
+          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
           <folding>
             <element signature="e#65#83#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/include/stdio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="233">
+          <caret line="350" column="22" selection-start-line="350" selection-start-column="22" selection-end-line="350" selection-end-column="22" />
         </state>
       </provider>
     </entry>
