@@ -28,16 +28,16 @@ int insertWord(struct TrieTree **root, char word[]);
 int searchWord(struct TrieTree **root, char word[]);
 
 //Funkcja sprawdzająca czy dany węzeł posiada dzieci
-bool isFreeNode(struct TrieTree* p);
+bool isFreeNode(struct TrieTree *p);
 
 //Funkcja sprawdzająca czy dane węzeł jest liściem
-bool isLeafNode(struct TrieTree* p);
+bool isLeafNode(struct TrieTree *p);
 
 //Funkcja pomocniczna do usuwania słowa
-bool deleteHelper(struct TrieTree* root, char* key, int level, int len);
+bool deleteHelper(struct TrieTree *root, char *key, int level, int len);
 
 //Funkcja usuwająca słowo z drzewa
-void deleteWord(struct TrieTree* root, char key[]);
+void deleteWord(struct TrieTree *root, char key[]);
 
 //Funkcja liczaca dlugosc wpisanego slowa
 int calculateStringLength(char word[]);
@@ -49,10 +49,10 @@ void toUpperCase(char word[]);
 void fillWordArrayWithNull(char word[]);
 
 //Funkcja wypisująca słowo
-void printWord(char* str, int n);
+void printWord(char *str, int n);
 
 //Funkcja wypisujaca wszystkie slowa z drzewa
-void printAllWords(struct TrieTree *root, char* word, int pos);
+void printAllWords(struct TrieTree *root, char *word, int pos);
 
 //Funkcja sprawdza czy czy wskaźnik root jest pusty (nie ma żadnych słów do wyświetlenia)
 void checkRootPointer(struct TrieTree *root);
