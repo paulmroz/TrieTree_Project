@@ -87,21 +87,8 @@ int searchWord(struct TrieTree **root, char word[]){
 
 }
 
-
-//Funkcja sprwadza czy dany node ma szukane slowo
-int haveChildren(struct TrieTree *current){
-    for (int i = 0; i < CHAR_SIZE; i++) {
-        if(current->children[i])
-        {
-            return 1 ;//ma dziecko
-        }
-    }
-    return 0;
-}
-
-
 ///////////////////////////
-// check if a trie node has no children
+//Funkcja sprawdzająca czy dany węzeł posiada dzieci
 bool isFreeNode(struct TrieTree* p)
 {
     int i;
@@ -113,25 +100,28 @@ bool isFreeNode(struct TrieTree* p)
     return true;
 }
 
+
+//Funkcja sprawdzająca czy dane węzeł jest liściem
 bool isLeafNode(struct TrieTree* p)
 {
     return p->isWordEnd == 1;
 }
 
+
+//Funkcja pomocniczna do usuwania słowa
 bool deleteHelper(struct TrieTree* root, char* key, int level, int len)
 {
     int ind;
-    //check if the key is in the trie.
+
     if(root!=NULL)
     {
         if(level==len)
         {
-            //check if the key is in the trie.
+
             if (root->isWordEnd)
             {
                 root->isWordEnd = 0;
 
-                //Is it an unique key?
                 return isFreeNode(root);
             }
         }
@@ -143,8 +133,6 @@ bool deleteHelper(struct TrieTree* root, char* key, int level, int len)
                 free(root->children[ind]);
                 root->children[ind] = NULL;
 
-                //check if the node is an unique key node. Case (2) and
-                //and case (4) can both generates unique key node.
                 if(!isLeafNode(root) && isFreeNode(root))
                 {
                     return true;
@@ -156,12 +144,13 @@ bool deleteHelper(struct TrieTree* root, char* key, int level, int len)
     return false;
 }
 
+//Funkcja usuwająca słowo z drzewa
 void deleteWord(struct TrieTree* root, char key[])
 {
     int len = (int *)strlen(key);
     if(len>0)
     {
-        //check if the key is the only one in the trie
+
         if(deleteHelper(root, key, 0, len))
         {
             root = NULL;
@@ -249,7 +238,7 @@ void fillWordArrayWithNull(char word[])
     }
 }
 
-
+//Funkcja wypisująca słowo
 void printWord(char* str, int n)
 {
     puts("");
@@ -258,6 +247,7 @@ void printWord(char* str, int n)
         printf("%c", str[i]);
     }
 }
+
 //Funkcja wypisujaca wszystkie slowa z drzewa
 void printAllWords(struct TrieTree *root, char* word, int pos)
 {
@@ -279,6 +269,8 @@ void printAllWords(struct TrieTree *root, char* word, int pos)
         }
     }
 }
+
+//Funkcja sprawdza czy czy wskaźnik root jest pusty (nie ma żadnych słów do wyświetlenia)
 void checkRootPointer(struct TrieTree *root){
     int counter = 0;
     for (int j = 0; j < CHAR_SIZE; j++) {
