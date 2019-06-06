@@ -15,6 +15,10 @@ string.h
 -
 stdbool.h
 -
+time.h
+-
+locale.h
+-
 
 /home/paulm/Desktop/Desktop/Projects/TrieTree_Project/source/main.c
 ../headers/main.h

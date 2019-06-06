@@ -5,56 +5,124 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <time.h>
+#include <locale.h>
 
-
-//struktura drzewa trie
+/*! typ bazowy elementu drzewa trie */
 struct TrieTree {
-
-    int isWordEnd;// 1 jezeli wezel jest koncem slowa
+    /** Flaga określająca węzeł jest ostatnim elementem słowa */
+    int isWordEnd;
+    /** Tablica wskaźników na kolejne węzły drzewa*/
     struct TrieTree *children[26];
 };
 
 
-//Funkcja pokazująca menu
+/**
+ * funkcja inicjująca menu
+ */
 void startMenu();
 
-//Funkcja ktora tworzy nowy Node
+/**
+ * funkcja tworząca drzewo trie
+ * @return struktura stworzona przez funkcje
+ */
+
 struct TrieTree *createNewTrieNode();
 
-//Funkcja dodajaca slowo
+/**
+ * funkcja dodająca słowo do drzewa
+ * @param wskaźnik root
+ * @param word
+ */
+
 int insertWord(struct TrieTree **root, char word[]);
 
-//Funkcja sprwadzajaca czy dane slowo istnieje
+
+/**
+ * funkcja sprawdzająca czy dane słowo jest obecne w drzewie
+ * @return wartość pola isWordEnd szukanego słowa
+ */
 int searchWord(struct TrieTree **root, char word[]);
 
-//Funkcja sprawdzająca czy dany węzeł posiada dzieci
-bool isFreeNode(struct TrieTree *p);
 
-//Funkcja sprawdzająca czy dane węzeł jest liściem
-bool isLeafNode(struct TrieTree *p);
+/**
+ * funkcja sprawdzająca czy dany węzeł posiada inne węzły
+ * @param root
+ * @return wartość typu bool
+ */
+bool isFreeNode(struct TrieTree *root);
 
-//Funkcja pomocniczna do usuwania słowa
+
+/**
+ * funkcja sprawdzająca czy dany węzeł jest końcem słowa
+ * @param wskaźnik root
+ * @return wartość typu bool
+ */
+bool isWordEndNode(struct TrieTree *root);
+
+/**
+ * Funkcja pomocnicza służąca do usuwania słowa
+ * @param wskaźnik root
+ * @param słowo do usunięcia key
+ * @param level
+ * @param dlugość słowa len
+ */
 bool deleteHelper(struct TrieTree *root, char *key, int level, int len);
 
-//Funkcja usuwająca słowo z drzewa
+/**
+ * Funkcja usuwająca słowo z drzewa
+ * @param wskaźnik root
+ * @param słowo do usunięcia key
+ */
 void deleteWord(struct TrieTree *root, char key[]);
 
-//Funkcja liczaca dlugosc wpisanego slowa
+/**
+ * Funkcja obliczająca długość podanego slowa
+ * @param word
+ * @return długość słowa
+ */
 int calculateStringLength(char word[]);
 
-//Funkcja ktora zmienia litery na duze
+
+/**
+ * Funkcja która zmienia litery w słowie na duże
+ * @param tablica ze słowem
+ */
 void toUpperCase(char word[]);
 
-//Funkcja wypełnia tablice wartosciami NULL
+/**
+ * Funkcja wypełnia tablice wartosciami NULL
+ * @param tablica ze słowem
+ */
 void fillWordArrayWithNull(char word[]);
 
-//Funkcja wypisująca słowo
+/**
+ * Funkcja wypisująca słowo
+ * @param słowo
+ * @param n
+ */
 void printWord(char *str, int n);
 
-//Funkcja wypisujaca wszystkie slowa z drzewa
+/**
+ * Funkcja wypisujaca wszystkie slowa z drzewa
+ * @param wskaźnik root
+ * @param word
+ * @param pos
+ */
 void printAllWords(struct TrieTree *root, char *word, int pos);
 
-//Funkcja sprawdza czy czy wskaźnik root jest pusty (nie ma żadnych słów do wyświetlenia)
+
+/**
+ * Funkcja sprawdza czy czy wskaźnik root jest pusty (nie ma żadnych słów do wyświetlenia)
+ * @param wskaźnik root
+ */
 void checkRootPointer(struct TrieTree *root);
+
+/**
+ * Funkcja sprawdza czy slowo zawiera tylko dozwolone znaki
+ * @param word
+ * @return bool
+ */
+int checkUserInput(char word[]);
 
 #endif //TRIETREE_PROJECT_MAIN_H
