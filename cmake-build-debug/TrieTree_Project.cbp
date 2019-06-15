@@ -8,78 +8,81 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug"/>
+				<Option working_dir="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug"/>
+				<Option working_dir="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TrieTree_Project">
-				<Option output="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/TrieTree_Project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug"/>
+				<Option output="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/TrieTree_Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrieTree_Project"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrieTree_Project"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TrieTree_Project/fast">
-				<Option output="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/TrieTree_Project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug"/>
+				<Option output="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/TrieTree_Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrieTree_Project/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrieTree_Project/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug"/>
+				<Option working_dir="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/main.c">
+		<Unit filename="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/headers/main.h">
 			<Option target="TrieTree_Project"/>
 		</Unit>
-		<Unit filename="/home/paulm/Desktop/Pulpit/Projects/TrieTree_Project/CMakeLists.txt">
+		<Unit filename="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/source/main.c">
+			<Option target="TrieTree_Project"/>
+		</Unit>
+		<Unit filename="/home/paulm/Desktop/Desktop/Projects/TrieTree_Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

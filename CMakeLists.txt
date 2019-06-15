@@ -3,4 +3,4 @@ project(TrieTree_Project C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(TrieTree_Project main.c)
+add_executable(TrieTree_Project source/main.c headers/main.h)

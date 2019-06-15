@@ -1,0 +1,233 @@
+\hypertarget{main_8h}{}\section{/home/paulm/\+Desktop/\+Desktop/\+Projects/\+Trie\+Tree\+\_\+\+Project/headers/main.h File Reference}
+\label{main_8h}\index{/home/paulm/Desktop/Desktop/Projects/TrieTree\_Project/headers/main.h@{/home/paulm/Desktop/Desktop/Projects/TrieTree\_Project/headers/main.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8h_adb4b7104b34632fd046d9a534eced233}{start\+Menu}} ()
+\item 
+struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$ \mbox{\hyperlink{main_8h_a414cee151515ebfa3ae9ebfd52625022}{create\+New\+Trie\+Node}} ()
+\item 
+int \mbox{\hyperlink{main_8h_ad6703f92d01d4364c419f70bf7b7cb67}{insert\+Word}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$$\ast$root, char word\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{main_8h_a8fc94756126c30b67bb63d679e783dd7}{search\+Word}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$$\ast$root, char word\mbox{[}$\,$\mbox{]})
+\item 
+bool \mbox{\hyperlink{main_8h_aa6f188bd40195fb7e4966c162b12e4e9}{is\+Free\+Node}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root)
+\item 
+bool \mbox{\hyperlink{main_8h_ad6abfab3bb8074323ca380f706cc746d}{is\+Word\+End\+Node}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root)
+\item 
+bool \mbox{\hyperlink{main_8h_ac483890a84c16d3982d60a28f20f7a7c}{delete\+Helper}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root, char $\ast$key, int level, int len)
+\item 
+void \mbox{\hyperlink{main_8h_af408facc78d99cb237cd1ce3f832c6e7}{delete\+Word}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root, char key\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{main_8h_a43570b32e6373ac31877f8707a037a9c}{calculate\+String\+Length}} (char word\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8h_a08445474f22b52db601e18f8e1f4928e}{to\+Upper\+Case}} (char word\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8h_a5e9540447ed79afc867ec69da0bc5309}{fill\+Word\+Array\+With\+Null}} (char word\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8h_a20c385515d8f8e99c4f33d8a0e8b6b74}{print\+Word}} (char $\ast$str, int n)
+\item 
+void \mbox{\hyperlink{main_8h_a019ec2a2fac233c7f43cd8713767d1fe}{print\+All\+Words}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root, char $\ast$word, int pos)
+\item 
+void \mbox{\hyperlink{main_8h_ad3d6b5ced691c0d95142a4cef5318b08}{check\+Root\+Pointer}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root)
+\item 
+int \mbox{\hyperlink{main_8h_a5aa6a257b30652af691f0e34a7aea882}{check\+User\+Input}} (char word\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8h_a43570b32e6373ac31877f8707a037a9c}\label{main_8h_a43570b32e6373ac31877f8707a037a9c}} 
+\index{main.h@{main.h}!calculateStringLength@{calculateStringLength}}
+\index{calculateStringLength@{calculateStringLength}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{calculateStringLength()}{calculateStringLength()}}
+{\footnotesize\ttfamily int calculate\+String\+Length (\begin{DoxyParamCaption}\item[{char}]{word\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funkcja obliczająca długość podanego slowa 
+\begin{DoxyParams}{Parameters}
+{\em word} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+długość słowa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8h_ad3d6b5ced691c0d95142a4cef5318b08}\label{main_8h_ad3d6b5ced691c0d95142a4cef5318b08}} 
+\index{main.h@{main.h}!checkRootPointer@{checkRootPointer}}
+\index{checkRootPointer@{checkRootPointer}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{checkRootPointer()}{checkRootPointer()}}
+{\footnotesize\ttfamily void check\+Root\+Pointer (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy czy wskaźnik root jest pusty (nie ma żadnych słów do wyświetlenia) 
+\begin{DoxyParams}{Parameters}
+{\em wskaźnik} & root \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8h_a5aa6a257b30652af691f0e34a7aea882}\label{main_8h_a5aa6a257b30652af691f0e34a7aea882}} 
+\index{main.h@{main.h}!checkUserInput@{checkUserInput}}
+\index{checkUserInput@{checkUserInput}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{checkUserInput()}{checkUserInput()}}
+{\footnotesize\ttfamily int check\+User\+Input (\begin{DoxyParamCaption}\item[{char}]{word\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy slowo zawiera tylko dozwolone znaki 
+\begin{DoxyParams}{Parameters}
+{\em word} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8h_a414cee151515ebfa3ae9ebfd52625022}\label{main_8h_a414cee151515ebfa3ae9ebfd52625022}} 
+\index{main.h@{main.h}!createNewTrieNode@{createNewTrieNode}}
+\index{createNewTrieNode@{createNewTrieNode}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{createNewTrieNode()}{createNewTrieNode()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}}$\ast$ create\+New\+Trie\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+funkcja tworząca drzewo trie \begin{DoxyReturn}{Returns}
+struktura stworzona przez funkcje 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8h_ac483890a84c16d3982d60a28f20f7a7c}\label{main_8h_ac483890a84c16d3982d60a28f20f7a7c}} 
+\index{main.h@{main.h}!deleteHelper@{deleteHelper}}
+\index{deleteHelper@{deleteHelper}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{deleteHelper()}{deleteHelper()}}
+{\footnotesize\ttfamily bool delete\+Helper (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$}]{root,  }\item[{char $\ast$}]{key,  }\item[{int}]{level,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Funkcja pomocnicza służąca do usuwania słowa 
+\begin{DoxyParams}{Parameters}
+{\em wskaźnik} & root \\
+\hline
+{\em słowo} & do usunięcia key \\
+\hline
+{\em level} & \\
+\hline
+{\em dlugość} & słowa len \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8h_af408facc78d99cb237cd1ce3f832c6e7}\label{main_8h_af408facc78d99cb237cd1ce3f832c6e7}} 
+\index{main.h@{main.h}!deleteWord@{deleteWord}}
+\index{deleteWord@{deleteWord}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{deleteWord()}{deleteWord()}}
+{\footnotesize\ttfamily void delete\+Word (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$}]{root,  }\item[{char}]{key\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funkcja usuwająca słowo z drzewa 
+\begin{DoxyParams}{Parameters}
+{\em wskaźnik} & root \\
+\hline
+{\em słowo} & do usunięcia key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8h_a5e9540447ed79afc867ec69da0bc5309}\label{main_8h_a5e9540447ed79afc867ec69da0bc5309}} 
+\index{main.h@{main.h}!fillWordArrayWithNull@{fillWordArrayWithNull}}
+\index{fillWordArrayWithNull@{fillWordArrayWithNull}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{fillWordArrayWithNull()}{fillWordArrayWithNull()}}
+{\footnotesize\ttfamily void fill\+Word\+Array\+With\+Null (\begin{DoxyParamCaption}\item[{char}]{word\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funkcja wypełnia tablice wartosciami N\+U\+LL 
+\begin{DoxyParams}{Parameters}
+{\em tablica} & ze słowem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8h_ad6703f92d01d4364c419f70bf7b7cb67}\label{main_8h_ad6703f92d01d4364c419f70bf7b7cb67}} 
+\index{main.h@{main.h}!insertWord@{insertWord}}
+\index{insertWord@{insertWord}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{insertWord()}{insertWord()}}
+{\footnotesize\ttfamily int insert\+Word (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$$\ast$}]{root,  }\item[{char}]{word\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+funkcja dodająca słowo do drzewa 
+\begin{DoxyParams}{Parameters}
+{\em wskaźnik} & root \\
+\hline
+{\em word} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8h_aa6f188bd40195fb7e4966c162b12e4e9}\label{main_8h_aa6f188bd40195fb7e4966c162b12e4e9}} 
+\index{main.h@{main.h}!isFreeNode@{isFreeNode}}
+\index{isFreeNode@{isFreeNode}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{isFreeNode()}{isFreeNode()}}
+{\footnotesize\ttfamily bool is\+Free\+Node (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+funkcja sprawdzająca czy dany węzeł posiada inne węzły 
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartość typu bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8h_ad6abfab3bb8074323ca380f706cc746d}\label{main_8h_ad6abfab3bb8074323ca380f706cc746d}} 
+\index{main.h@{main.h}!isWordEndNode@{isWordEndNode}}
+\index{isWordEndNode@{isWordEndNode}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{isWordEndNode()}{isWordEndNode()}}
+{\footnotesize\ttfamily bool is\+Word\+End\+Node (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+funkcja sprawdzająca czy dany węzeł jest końcem słowa 
+\begin{DoxyParams}{Parameters}
+{\em wskaźnik} & root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartość typu bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8h_a019ec2a2fac233c7f43cd8713767d1fe}\label{main_8h_a019ec2a2fac233c7f43cd8713767d1fe}} 
+\index{main.h@{main.h}!printAllWords@{printAllWords}}
+\index{printAllWords@{printAllWords}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{printAllWords()}{printAllWords()}}
+{\footnotesize\ttfamily void print\+All\+Words (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$}]{root,  }\item[{char $\ast$}]{word,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca wszystkie slowa z drzewa 
+\begin{DoxyParams}{Parameters}
+{\em wskaźnik} & root \\
+\hline
+{\em word} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8h_a20c385515d8f8e99c4f33d8a0e8b6b74}\label{main_8h_a20c385515d8f8e99c4f33d8a0e8b6b74}} 
+\index{main.h@{main.h}!printWord@{printWord}}
+\index{printWord@{printWord}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{printWord()}{printWord()}}
+{\footnotesize\ttfamily void print\+Word (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Funkcja wypisująca słowo 
+\begin{DoxyParams}{Parameters}
+{\em słowo} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8h_a8fc94756126c30b67bb63d679e783dd7}\label{main_8h_a8fc94756126c30b67bb63d679e783dd7}} 
+\index{main.h@{main.h}!searchWord@{searchWord}}
+\index{searchWord@{searchWord}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{searchWord()}{searchWord()}}
+{\footnotesize\ttfamily int search\+Word (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$$\ast$}]{root,  }\item[{char}]{word\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+funkcja sprawdzająca czy dane słowo jest obecne w drzewie \begin{DoxyReturn}{Returns}
+wartość pola is\+Word\+End szukanego słowa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8h_adb4b7104b34632fd046d9a534eced233}\label{main_8h_adb4b7104b34632fd046d9a534eced233}} 
+\index{main.h@{main.h}!startMenu@{startMenu}}
+\index{startMenu@{startMenu}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{startMenu()}{startMenu()}}
+{\footnotesize\ttfamily void start\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+funkcja inicjująca menu \mbox{\Hypertarget{main_8h_a08445474f22b52db601e18f8e1f4928e}\label{main_8h_a08445474f22b52db601e18f8e1f4928e}} 
+\index{main.h@{main.h}!toUpperCase@{toUpperCase}}
+\index{toUpperCase@{toUpperCase}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{toUpperCase()}{toUpperCase()}}
+{\footnotesize\ttfamily void to\+Upper\+Case (\begin{DoxyParamCaption}\item[{char}]{word\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funkcja która zmienia litery w słowie na duże 
+\begin{DoxyParams}{Parameters}
+{\em tablica} & ze słowem \\
+\hline
+\end{DoxyParams}

@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="2e6f70b1-38bc-493a-9128-4036a3084ef5" name="Default Changelist" comment="" />
 =======
     <list default="true" id="2e6f70b1-38bc-493a-9128-4036a3084ef5" name="Default Changelist" comment="">
@@ -38,6 +39,11 @@
 =======
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
 >>>>>>> delete_word_brach
+=======
+    <list default="true" id="5fb8d5f8-87dc-43b2-9934-8343d49ba644" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> visualisation_branch
     </list>
 >>>>>>> first_milestone
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -47,12 +53,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.c">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/main.c">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="30">
@@ -68,6 +87,10 @@
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
 >>>>>>> first_milestone
+=======
+            <state relative-caret-position="15">
+              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+>>>>>>> visualisation_branch
             </state>
           </provider>
         </entry>
@@ -89,6 +112,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.c" />
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
 =======
@@ -144,6 +168,19 @@
     <option name="width" value="1276" />
     <option name="height" value="689" />
 >>>>>>> delete_word_brach
+=======
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/headers/main.h" />
+        <option value="$PROJECT_DIR$/source/main.c" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="728" />
+>>>>>>> visualisation_branch
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -151,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,19 +196,36 @@
               <item name="TrieTree_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrieTree_Project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TrieTree_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrieTree_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="headers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrieTree_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrieTree_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Projekt_PP2_MINI" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -211,7 +266,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2e6f70b1-38bc-493a-9128-4036a3084ef5" name="Default Changelist" comment="" />
+      <changelist id="5fb8d5f8-87dc-43b2-9934-8343d49ba644" name="Default Changelist" comment="" />
       <created>1552503887447</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -236,11 +291,28 @@
 >>>>>>> first_milestone
 =======
       <workItem from="1553422057775" duration="2476000" />
+<<<<<<< HEAD
 >>>>>>> delete_word_brach
+=======
+      <workItem from="1554219497219" duration="20000" />
+      <workItem from="1558029383527" duration="9809000" />
+      <workItem from="1558260927441" duration="1761000" />
+      <workItem from="1559046050441" duration="4300000" />
+      <workItem from="1559065794691" duration="5916000" />
+      <workItem from="1559128196341" duration="447000" />
+      <workItem from="1559128681195" duration="611000" />
+      <workItem from="1559666006653" duration="10561000" />
+      <workItem from="1559822925321" duration="1926000" />
+      <workItem from="1559830361128" duration="2905000" />
+      <workItem from="1560240866521" duration="8111000" />
+      <workItem from="1560333745618" duration="25000" />
+      <workItem from="1560617933739" duration="1076000" />
+>>>>>>> visualisation_branch
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="133000" />
@@ -255,6 +327,9 @@
 =======
     <option name="totallyTimeSpent" value="50382000" />
 >>>>>>> delete_word_brach
+=======
+    <option name="totallyTimeSpent" value="104367000" />
+>>>>>>> visualisation_branch
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -267,6 +342,7 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="0" y="0" width="1366" height="736" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19242424" />
@@ -276,10 +352,39 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19090909" />
 >>>>>>> delete_word_brach
+=======
+    <frame x="-4" y="312" width="1374" height="740" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6589786" visible="true" weight="0.23106061" />
+      <window_info id="Structure" order="1" sideWeight="0.34102142" side_tool="true" visible="true" weight="0.23106061" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.23449" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3294893" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.533123" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007576" side_tool="true" weight="0.3756178" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294893" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.3294893" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3270242" />
+      <window_info anchor="bottom" x="1366" y="757" width="1920" height="327" id="Debug" order="12" sideWeight="0.49924242" weight="0.2933754" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13767342" />
+>>>>>>> visualisation_branch
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.16636851" />
@@ -315,11 +420,24 @@
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3294893" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.6392092" />
 >>>>>>> delete_word_brach
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.11356467" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3294893" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22607781" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007576" side_tool="true" weight="0.3756178" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294893" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.3294893" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.43007362" />
+      <window_info anchor="bottom" x="1366" y="29" width="1920" height="1051" id="Debug" maximized="true" order="12" sideWeight="0.49924242" type="WINDOWED" weight="0.6062603" />
+>>>>>>> visualisation_branch
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
 <<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,6 +515,7 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -427,9 +546,25 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
 >>>>>>> first_milestone
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
+=======
+    <entry file="file:///usr/include/stdio.h">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+>>>>>>> visualisation_branch
+    </entry>
+    <entry file="file://$PROJECT_DIR$/headers/main.h">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="30">
@@ -441,10 +576,28 @@
         <state relative-caret-position="55">
           <caret line="120" column="135" selection-start-line="120" selection-start-column="135" selection-end-line="120" selection-end-column="135" />
 >>>>>>> delete_word_brach
+=======
+        <state relative-caret-position="1020">
+          <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+>>>>>>> visualisation_branch
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#65#83#0" expanded="true" />
           </folding>
 >>>>>>> first_milestone
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
