@@ -41,6 +41,8 @@ void \mbox{\hyperlink{main_8h_a20c385515d8f8e99c4f33d8a0e8b6b74}{print\+Word}} (
 void \mbox{\hyperlink{main_8h_a019ec2a2fac233c7f43cd8713767d1fe}{print\+All\+Words}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root, char $\ast$word, int pos)
 \item 
 void \mbox{\hyperlink{main_8h_ad3d6b5ced691c0d95142a4cef5318b08}{check\+Root\+Pointer}} (struct \mbox{\hyperlink{structTrieTree}{Trie\+Tree}} $\ast$root)
+\item 
+int \mbox{\hyperlink{main_8h_a5aa6a257b30652af691f0e34a7aea882}{check\+User\+Input}} (char word\mbox{[}$\,$\mbox{]})
 \end{DoxyCompactItemize}
 
 
@@ -70,6 +72,20 @@ Funkcja sprawdza czy czy wskaźnik root jest pusty (nie ma żadnych słów do wy
 {\em wskaźnik} & root \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{main_8h_a5aa6a257b30652af691f0e34a7aea882}\label{main_8h_a5aa6a257b30652af691f0e34a7aea882}} 
+\index{main.h@{main.h}!checkUserInput@{checkUserInput}}
+\index{checkUserInput@{checkUserInput}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{checkUserInput()}{checkUserInput()}}
+{\footnotesize\ttfamily int check\+User\+Input (\begin{DoxyParamCaption}\item[{char}]{word\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy slowo zawiera tylko dozwolone znaki 
+\begin{DoxyParams}{Parameters}
+{\em word} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
 \mbox{\Hypertarget{main_8h_a414cee151515ebfa3ae9ebfd52625022}\label{main_8h_a414cee151515ebfa3ae9ebfd52625022}} 
 \index{main.h@{main.h}!createNewTrieNode@{createNewTrieNode}}
 \index{createNewTrieNode@{createNewTrieNode}!main.h@{main.h}}

@@ -13,19 +13,112 @@
   <component name="ChangeListManager">
     <list default="true" id="5fb8d5f8-87dc-43b2-9934-8343d49ba644" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrieTree_Project.dir/source/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrieTree_Project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/Doxyfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/bc_s.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/bc_s.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/bdwn.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/bdwn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/closed.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/closed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/doc.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/doc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/doxygen.css" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/doxygen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/doxygen.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/doxygen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/dynsections.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/dynsections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/folderclosed.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/folderclosed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/folderopen.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/folderopen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/globals_defs.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/globals_defs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/main_8c.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/main_8c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/main_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/main_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/main_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/main_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/nav_f.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/nav_f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/nav_g.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/nav_g.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/nav_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/nav_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/open.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/classes_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/classes_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/defines_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/defines_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/defines_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/defines_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/defines_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/defines_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/defines_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/defines_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/files_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/mag_sel.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/mag_sel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/nomatches.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/nomatches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/search_l.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/search_l.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/search_m.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/search_m.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/search_r.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/search_r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/variables_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/variables_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/variables_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/search/variables_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/splitbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/splitbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/structTrieTree-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/structTrieTree-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/structTrieTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/structTrieTree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/sync_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/sync_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/sync_on.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/sync_on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/tab_a.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/tab_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/tab_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/tab_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/tab_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/tab_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/tab_s.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/tab_s.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/html/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/annotated.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/dir_7f57b1e41c5acd0e859ae5f3a2b075a9.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/dir_7f57b1e41c5acd0e859ae5f3a2b075a9.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/doxygen.sty" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/doxygen.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/files.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/main_8c.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/main_8c.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/main_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/main_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/latex/structTrieTree.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen_doc/latex/structTrieTree.tex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,37 +132,17 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4372587">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/headers/main.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1905">
-                  <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#65#83#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/source/main.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="249" column="22" lean-forward="true" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1275">
+              <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,9 +158,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1362" />
-    <option name="width" value="1928" />
-    <option name="height" value="1080" />
+    <option name="x" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -95,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,13 +190,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Snake" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Projekt_PP2_MINI" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -184,12 +257,15 @@
       <workItem from="1559128681195" duration="611000" />
       <workItem from="1559666006653" duration="10561000" />
       <workItem from="1559822925321" duration="1926000" />
-      <workItem from="1559830361128" duration="1526000" />
+      <workItem from="1559830361128" duration="2905000" />
+      <workItem from="1560240866521" duration="8111000" />
+      <workItem from="1560333745618" duration="25000" />
+      <workItem from="1560617933739" duration="795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93776000" />
+    <option name="totallyTimeSpent" value="104086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -201,25 +277,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1362" y="0" width="1928" height="1080" extended-state="6" />
+    <frame x="-4" y="312" width="1374" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66346157" visible="true" weight="0.22091782" />
-      <window_info id="Structure" order="1" sideWeight="0.33653846" side_tool="true" visible="true" weight="0.22091782" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6589786" visible="true" weight="0.23106061" />
+      <window_info id="Structure" order="1" sideWeight="0.34102142" side_tool="true" visible="true" weight="0.23106061" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.23449" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.23449" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3294893" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.049423393" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.533123" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007576" side_tool="true" weight="0.3756178" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294893" />
       <window_info anchor="bottom" id="CMake" order="10" weight="0.3294893" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3270242" />
-      <window_info anchor="bottom" x="1366" y="440" width="1920" height="648" id="Debug" order="12" sideWeight="0.49924242" type="WINDOWED" visible="true" weight="0.6062603" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3270242" />
+      <window_info anchor="bottom" x="1366" y="757" width="1920" height="327" id="Debug" order="12" sideWeight="0.49924242" weight="0.2933754" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -308,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/headers/main.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+        <state relative-caret-position="1020">
+          <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
           <folding>
             <element signature="e#65#83#0" expanded="true" />
           </folding>
@@ -318,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="249" column="22" lean-forward="true" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
+        <state relative-caret-position="1275">
+          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
         </state>
       </provider>
     </entry>
